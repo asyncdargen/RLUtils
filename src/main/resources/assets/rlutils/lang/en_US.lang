@@ -1,0 +1,16 @@
+session.alts=Account Switch
+session.alts.btn.done=Done
+session.alts.btn.cancel=Cancel
+session.alts.btn.restore=Restore
+session.alts.field.login=Enter offline name or mail:
+session.alts.field.password=Enter password:
+session.alts.state.online=Online
+session.alts.state.offline=Offline
+session.alts.state.wait=Wait 5-10 seconds...
+
+gui.main.single=Singleplayer
+gui.main.multi=Multiplayer
+gui.main.settings=Settings
+gui.main.quit=Quit Game
+
+bind.button=Binds

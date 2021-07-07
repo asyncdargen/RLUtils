@@ -1,0 +1,16 @@
+[
+    {
+        "modid": "rlutils",
+        "name": "RLUtils",
+        "description": "Mod for redline with love <3",
+        "version": "1.0",
+        "mcversion": "1.12.2",
+        "url": "https://redline.pw",
+        "updateUrl": "",
+        "authorList": ["dargen"],
+        "credits": "",
+        "logoFile": "assets/rlutils/textures/gui/logo/logo530.png",
+        "screenshots": [],
+        "dependencies": []
+    }
+]

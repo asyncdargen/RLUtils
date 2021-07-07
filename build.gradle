@@ -1,0 +1,54 @@
+import proguard.gradle.ProGuardTask
+
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'net.sf.proguard:proguard-gradle:6.1.1'
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '4.1.+', changing: true
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle'
+
+group = 'ru.redline'
+version = '1.0'
+archivesBaseName = 'RLUtils'
+
+minecraft.mappings channel: 'stable', version: '39-1.12'
+
+repositories {
+    maven { url = 'https://maven.minecraftforge.net' }
+    mavenCentral()
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2855'
+    compile fileTree('A:\\dev\\java\\Jar\\nashorn.jar')
+    compile 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
+}
+
+sourceSets.main.resources.srcDir 'src/generated/resources'
+
+jar {
+    from {
+        configurations.compile
+                .filter { it.name == 'nashorn.jar' }
+                .collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    manifest {
+        attributes([
+                "FMLCorePluginContainsFMLMod": true,
+                "ForceLoadAsMod": true,
+                "FMLCorePlugin": "ru.redline.core.RLCore"
+        ])
+    }
+}
+
+tasks.withType(JavaCompile)*.options*.encoding = 'UTF-8'
+
+
+jar.finalizedBy('reobfJar')

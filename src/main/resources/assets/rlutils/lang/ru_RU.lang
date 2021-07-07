@@ -1,0 +1,16 @@
+session.alts=Смена Аккаунта
+session.alts.btn.done=Готово
+session.alts.btn.cancel=Отмена
+session.alts.btn.restore=Восстановить
+session.alts.field.login=Введите оффлайн ник или почту:
+session.alts.field.password=Введите пароль:
+session.alts.state.online=Онлайн
+session.alts.state.offline=Оффлайн
+session.alts.state.wait=Подождите 5-10 секунд...
+
+gui.main.single=Одиночная игра
+gui.main.multi=Сетевая игра
+gui.main.settings=Настройки
+gui.main.quit=Выйти из игры
+
+bind.button=Binds
