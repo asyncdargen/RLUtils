@@ -8,6 +8,7 @@ public class RLCore extends HookLoader {
         registerHookContainer("ru.redline.core.hooks.ScoreHook");
         registerHookContainer("ru.redline.core.hooks.NetworkHook");
         registerHookContainer("ru.redline.core.hooks.SessionHook");
+        registerHookContainer("ru.redline.core.hooks.BrandHook");
     }
 
 }
