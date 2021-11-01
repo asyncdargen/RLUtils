@@ -13,9 +13,9 @@ buildscript {
 
 apply plugin: 'net.minecraftforge.gradle'
 
-group = 'ru.redline'
+group = 'ru.starfarm'
 version = '1.0'
-archivesBaseName = 'RLUtils'
+archivesBaseName = 'SFUtils'
 
 minecraft.mappings channel: 'stable', version: '39-1.12'
 
@@ -26,7 +26,7 @@ repositories {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2855'
-    compile fileTree('A:\\dev\\java\\Jar\\nashorn.jar')
+    compile fileTree('D:\\nashorn.jar')
     compile 'org.projectlombok:lombok:1.18.10'
     annotationProcessor 'org.projectlombok:lombok:1.18.10'
 }
@@ -43,7 +43,7 @@ jar {
         attributes([
                 "FMLCorePluginContainsFMLMod": true,
                 "ForceLoadAsMod": true,
-                "FMLCorePlugin": "ru.redline.core.RLCore"
+                "FMLCorePlugin": "ru.starfarm.core.SFCore"
         ])
     }
 }

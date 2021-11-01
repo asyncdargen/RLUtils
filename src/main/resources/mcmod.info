@@ -1,15 +1,15 @@
 [
     {
-        "modid": "rlutils",
-        "name": "RLUtils",
-        "description": "Mod for redline with love <3",
+        "modid": "sfutils",
+        "name": "SFUtils",
+        "description": "Mod for StarFarm with love <3",
         "version": "1.0",
         "mcversion": "1.12.2",
-        "url": "https://redline.pw",
+        "url": "https://starfarm.fun/",
         "updateUrl": "",
-        "authorList": ["dargen"],
+        "authorList": ["dargen", "GoDL1ghT"],
         "credits": "",
-        "logoFile": "assets/rlutils/textures/gui/logo/logo530.png",
+        "logoFile": "assets/starfarm/textures/gui/logo/logo530.png",
         "screenshots": [],
         "dependencies": []
     }
